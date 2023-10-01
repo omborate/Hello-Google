@@ -27,8 +27,7 @@ def predict():
     equity_ask = data.get('equity_ask')
     valuation = data.get('valuation')
     features = [ no_city, market_size, sales_prev_years, sales_prev_month, profit,ebidta, gross_margin, amount_for_equity,equity_ask, valuation]
-    for x in features:
-        print(int(x),x)
+    
     
     float_features = [float(x) for x in features]
     features = [np.array(float_features)]
